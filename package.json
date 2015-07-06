@@ -1,0 +1,26 @@
+{
+  "name": "together-core-whiteboard",
+  "version": "0.0.1",
+  "description": "whiteboard for together",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/together-education/together-core-whiteboard.git"
+  },
+  "keywords": [
+    "education"
+  ],
+  "author": "Xuanwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/together-education/together-core-whiteboard/issues"
+  },
+  "homepage": "https://github.com/together-education/together-core-whiteboard#readme",
+  "dependencies":{
+    "mkdirp": "~0.3.0",
+    "rimraf": "~1.0.0",
+    "express": "~3.0.0",
+    "socket.io": "~1.0.0",
+    "range-parser": "0.0.4"
+  }
+}
