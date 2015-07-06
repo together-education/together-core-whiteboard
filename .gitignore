@@ -1,0 +1,10 @@
+﻿.DS_Store
+Thumbs.db
+db.json
+debug.log
+node_modules/
+public/
+.deploy/
+.c9/
+.deploy_git/
+.idea/
