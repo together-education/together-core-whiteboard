@@ -8,4 +8,4 @@ public/
 .c9/
 .deploy_git/
 .idea/
-npm-debug.log
+**.log
