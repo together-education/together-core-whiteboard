@@ -1,6 +1,6 @@
 {
   "name": "together-core-whiteboard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "whiteboard for together",
   "main": "app.js",
   "repository": {
