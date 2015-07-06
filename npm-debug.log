@@ -1,138 +1,29 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'publish' ]
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
 2 info using npm@2.11.2
 3 info using node@v0.12.6
-4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec { raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: 'E:\\代码\\together\\together-core-whiteboard',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package.tgz not in flight; packing
-9 verbose tar pack [ 'C:\\Users\\xuanw\\AppData\\Roaming\\npm-cache\\together-core-whiteboard\\0.0.1\\package.tgz',
-9 verbose tar pack   'E:\\代码\\together\\together-core-whiteboard' ]
-10 verbose tarball C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package.tgz
-11 verbose folder E:\代码\together\together-core-whiteboard
-12 info prepublish together-core-whiteboard@0.0.1
-13 verbose addLocalTarball adding from inside cache C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package.tgz
-14 silly cache afterAdd together-core-whiteboard@0.0.1
-15 verbose afterAdd C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package\package.json not in flight; writing
-16 verbose afterAdd C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package\package.json written
-17 silly publish { name: 'together-core-whiteboard',
-17 silly publish   version: '0.0.1',
-17 silly publish   description: 'whiteboard for together',
-17 silly publish   main: 'app.js',
-17 silly publish   repository:
-17 silly publish    { type: 'git',
-17 silly publish      url: 'git+https://github.com/together-education/together-core-whiteboard.git' },
-17 silly publish   keywords: [ 'education' ],
-17 silly publish   author: { name: 'Xuanwo' },
-17 silly publish   license: 'ISC',
-17 silly publish   bugs: { url: 'https://github.com/together-education/together-core-whiteboard/issues' },
-17 silly publish   homepage: 'https://github.com/together-education/together-core-whiteboard#readme',
-17 silly publish   dependencies:
-17 silly publish    { mkdirp: '~0.3.0',
-17 silly publish      rimraf: '~1.0.0',
-17 silly publish      express: '~3.0.0',
-17 silly publish      'socket.io': '~1.0.0',
-17 silly publish      'range-parser': '0.0.4' },
-17 silly publish   gitHead: '9d65bacec6cfee176506a3c8a2e1a8981b4e4830',
-17 silly publish   readme: 'ERROR: No README data found!',
-17 silly publish   _id: 'together-core-whiteboard@0.0.1',
-17 silly publish   scripts: {},
-17 silly publish   _shasum: '1671e6a16fbe8ca4268d654d90d43417a038a525',
-17 silly publish   _from: '.' }
-18 verbose getPublishConfig undefined
-19 silly mapToRegistry name together-core-whiteboard
-20 silly mapToRegistry using default registry
-21 silly mapToRegistry registry https://registry.npmjs.org/
-22 silly mapToRegistry uri https://registry.npmjs.org/together-core-whiteboard
-23 verbose publish registryBase https://registry.npmjs.org/
-24 silly publish uploading C:\Users\xuanw\AppData\Roaming\npm-cache\together-core-whiteboard\0.0.1\package.tgz
-25 verbose request uri https://registry.npmjs.org/together-core-whiteboard
-26 verbose request sending authorization for write operation
-27 info attempt registry request try #1 at 17:55:58
-28 verbose request using bearer token for auth
-29 verbose request id ca00412ce6398024
-30 http request PUT https://registry.npmjs.org/together-core-whiteboard
-31 http 503 https://registry.npmjs.org/together-core-whiteboard
-32 verbose bad json <?xml version="1.0" encoding="utf-8"?>
-32 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-32 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-32 verbose bad json <html>
-32 verbose bad json   <head>
-32 verbose bad json     <title>503 backend read error</title>
-32 verbose bad json   </head>
-32 verbose bad json   <body>
-32 verbose bad json     <h1>Error 503 backend read error</h1>
-32 verbose bad json     <p>backend read error</p>
-32 verbose bad json     <h3>Guru Mediation:</h3>
-32 verbose bad json     <p>Details: cache-nrt6123-NRT 1436176607 2278380946</p>
-32 verbose bad json     <hr>
-32 verbose bad json     <p>Varnish cache server</p>
-32 verbose bad json   </body>
-32 verbose bad json </html>
-33 error registry error parsing json
-34 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
-34 info retry
-34 info retry <?xml version="1.0" encoding="utf-8"?>
-34 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-34 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-34 info retry <html>
-34 info retry   <head>
-34 info retry     <title>503 backend read error</title>
-34 info retry   </head>
-34 info retry   <body>
-34 info retry     <h1>Error 503 backend read error</h1>
-34 info retry     <p>backend read error</p>
-34 info retry     <h3>Guru Mediation:</h3>
-34 info retry     <p>Details: cache-nrt6123-NRT 1436176607 2278380946</p>
-34 info retry     <hr>
-34 info retry     <p>Varnish cache server</p>
-34 info retry   </body>
-34 info retry </html>
-35 info attempt registry request try #2 at 17:56:50
-36 verbose request using bearer token for auth
-37 http request PUT https://registry.npmjs.org/together-core-whiteboard
-38 http 403 https://registry.npmjs.org/together-core-whiteboard
-39 verbose headers { 'content-type': 'application/json',
-39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '95',
-39 verbose headers   'accept-ranges': 'bytes',
-39 verbose headers   date: 'Mon, 06 Jul 2015 09:56:59 GMT',
-39 verbose headers   via: '1.1 varnish',
-39 verbose headers   connection: 'keep-alive',
-39 verbose headers   'x-served-by': 'cache-nrt6128-NRT',
-39 verbose headers   'x-cache': 'MISS',
-39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1436176618.525580,VS0,VE477' }
-40 verbose request invalidating C:\Users\xuanw\AppData\Roaming\npm-cache\registry.npmjs.org\together-core-whiteboard on PUT
-41 error publish Failed PUT 403
-42 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : together-core-whiteboard
-42 verbose stack     at CachingRegistryClient.<anonymous> (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:247:14)
-42 verbose stack     at Request._callback (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
-42 verbose stack     at Request.self.callback (C:\nodejs\node_modules\npm\node_modules\request\request.js:354:22)
-42 verbose stack     at Request.emit (events.js:110:17)
-42 verbose stack     at Request.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:1207:14)
-42 verbose stack     at Request.emit (events.js:129:20)
-42 verbose stack     at IncomingMessage.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:1153:12)
-42 verbose stack     at IncomingMessage.emit (events.js:129:20)
-42 verbose stack     at _stream_readable.js:908:16
-42 verbose stack     at process._tickCallback (node.js:355:11)
-43 verbose statusCode 403
-44 verbose pkgid together-core-whiteboard
-45 verbose cwd E:\代码\together\together-core-whiteboard
-46 error Windows_NT 6.3.9600
-47 error argv "C:\\nodejs\\\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-48 error node v0.12.6
-49 error npm  v2.11.2
-50 error code E403
-51 error "You cannot publish over the previously published version 0.0.1." : together-core-whiteboard
-52 error If you need help, you may report this error at:
-52 error     <https://github.com/npm/npm/issues>
-53 verbose exit [ 1, true ]
+4 info preversion together-core-whiteboard@0.0.3
+5 info git [ 'status', '--porcelain' ]
+6 verbose stack Error: Error: Git working directory not clean.
+6 verbose stack M .idea/workspace.xml
+6 verbose stack D npm-debug.log
+6 verbose stack     at C:\nodejs\node_modules\npm\lib\version.js:71:23
+6 verbose stack     at C:\nodejs\node_modules\npm\lib\version.js:151:34
+6 verbose stack     at ChildProcess.exithandler (child_process.js:742:7)
+6 verbose stack     at ChildProcess.emit (events.js:110:17)
+6 verbose stack     at maybeClose (child_process.js:1015:16)
+6 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+7 verbose cwd E:\代码\together\together-core-whiteboard
+8 error Windows_NT 6.3.9600
+9 error argv "C:\\nodejs\\\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "version" "patch"
+10 error node v0.12.6
+11 error npm  v2.11.2
+12 error Error: Git working directory not clean.
+12 error M .idea/workspace.xml
+12 error D npm-debug.log
+13 error If you need help, you may report this error at:
+13 error     <https://github.com/npm/npm/issues>
+14 verbose exit [ 1, true ]
